@@ -33,7 +33,7 @@
                 </div>
                 <div class="pt-5">
 
-                    <h3 class="mb-5">{{ article.comment.counter }} Comments</h3>
+                    <h3 class="mb-5">{{ comments.count }} Comments</h3>
 
                     <ul class="comment-list">
 
@@ -41,7 +41,7 @@
 
                         <li class="comment">
                             <div class="vcard">
-                                <img src="images/xperson_1.jpg.pagespeed.ic.n01-szf7gg.jpg" alt="Image placeholder">
+                                <img src="{% static 'images/xperson_1.jpg.pagespeed.ic.n01-szf7gg.jpg' %}" alt="Image placeholder">
                             </div>
                             <div class="comment-body">
                                 <h3>{{comment.name}}</h3>

@@ -157,7 +157,7 @@ def category(request):
 
     ctx = give_articles(articles, 3, 'hor_articles', ctx)
     ctx = get_cat_num(ctx)
-    tags = Tags.objects.all()articles
+    tags = Tags.objects.all()
     ctx['tags'] = tags
 
     p = Paginator(articles, 1)
